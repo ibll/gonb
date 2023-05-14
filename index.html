@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gonbinary</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+
+    <meta content="Gonbinary Translator!" property="og:title" />
+    <meta
+        content="Everybody is speaking it, its Gonbinary! If you are just learning how to communicate in Gonbinary, feel free to use this translator until you are fluent."
+        property="og:description" />
+    <meta content="https://thegooddude22.github.io/gonb/" property="og:url" />
+    <meta content="https://thegooddude22.github.io/gonb/gonbinary.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="./css/gonbinary.css">
+    <link rel="stylesheet" href="./css/fab.css">
+    <link rel="stylesheet" href="./css/updatenotes.css">
+    <link rel="stylesheet" href="./css/toast.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gonbinary Translator</h1>
+        <div class="updateNotes" id="updateNotes">
+            <button id="updateNotesButton"><span>✕</span></button>
+            <p class="title">What's New?</p>
+            <p>- Easy copy buttons (especially nice on mobile!)</p>
+        </div>
+    </div>
+    <div class="container">
+        <p>Text goes here:</p>
+        <textarea id="inputBox" placeholder="Hello!"></textarea>
+
+        <br>
+
+        <p>Gonb goes here:</p>
+        <textarea id="outputBox" placeholder="gOnbGonb gONbgOnB gONbGOnb gONbGOnb gONbGONB goNbgonB"
+            spellcheck="false"></textarea>
+    </div>
+
+    <div id="toastBox">
+        <div id="toast">
+            Copied!
+            <div id="progress"></div>
+        </div>
+    </div>
+
+
+    <div class="fab-container">
+        <ul id="fab-options">
+            <li id="copyText">
+                <span class="btn-label ">Copy Text</span>
+                <div class="iconbutton">
+                    <span class="iconify" data-icon="lucide:align-left"></span>
+                </div>
+            </li>
+            <li id="copyGonb">
+                <span class="btn-label">Copy Gonb</span>
+                <div class="iconbutton">
+                    <span class="iconify" data-icon="lucide:binary"></span>
+                </div>
+            </li>
+        </ul>
+        <div class="iconbutton" id="fab">
+            <span class="iconify" data-icon="lucide:plus" data-inline="false"></span>
+        </div>
+    </div>
+
+    <div id="gradient-blob"></div>
+    <div id="blob-blur"></div>
+</body>
+
+<script type="module" src="./js/gonbinary.js"></script>
+<script type="module" src="./js/fab.js"></script>
+<script type="module" src="./js/updatenotes.js"></script>
+</html>
